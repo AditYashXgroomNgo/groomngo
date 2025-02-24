@@ -13,6 +13,7 @@ export const sessionStore = new MongoDBStore({
 sessionStore.on("error", (error) => {
   console.log("Session store error", error);
 });
+
 // export const authenticate = async (email, password) => {
 //     if (email == "aditya.14mittal@gmail.com" && password == "1234") {
 //         return Promise.resolve({ email: email, password: password });
@@ -39,3 +40,9 @@ export const authenticate = async (email, password) => {
 
 export const PORT = process.env.PORT || 3000;
 export const COOKIE_PASSWORD = process.env.COOKIE_PASSWORD;
+
+
+
+
+
+

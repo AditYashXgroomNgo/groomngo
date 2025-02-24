@@ -23,6 +23,7 @@ const customerSchema = new mongoose.Schema({
     longitude: { type: Number },
   },
   address: { type: String },
+  slot:{type: String},
 });
 
 // Delivery Partner Schema

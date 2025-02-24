@@ -46,7 +46,7 @@ export const loginCustomer = async (req, reply) => {
       customer,
     });
   } catch (error) {
-    return reply.status(500).send({ message: "An error occurred", error });
+    return reply.status(500).send({ message: "" });
   }
 };
 export const updateCustomerAddress = async (req, reply) => {
@@ -62,6 +62,7 @@ export const updateCustomerAddress = async (req, reply) => {
     }
 
     // Update the address and save the document
+    customer.address = newAddress;
     customer.address = newAddress;
     const updatedCustomer = await customer.save();
 
