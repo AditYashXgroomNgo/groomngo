@@ -63,7 +63,7 @@ export const updateCustomerAddress = async (req, reply) => {
 
     // Update the address and save the document
     customer.address = newAddress;
-    customer.address = newAddress;
+    customer.slot = newAddress;
     const updatedCustomer = await customer.save();
 
     // Check if the customer document was updated successfully

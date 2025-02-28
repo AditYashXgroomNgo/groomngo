@@ -12,9 +12,9 @@ export const admin = new AdminJS({
     {
       resource: Models.Customer,
       options: {
-        listProperties: ["phone", "role", "isActivated", "address"], // Include address in the list view
-        filterProperties: ["phone", "role", "address"], // Include address in the filters
-        editProperties: ["phone", "role", "isActivated", "address"], // Include address in the edit view
+        listProperties: ["phone", "role", "isActivated", "address","slot"], // Include address in the list view
+        filterProperties: ["phone", "role", "address","slot"], // Include address in the filters
+        editProperties: ["phone", "role", "isActivated", "address","slot"], // Include address in the edit view
         //showProperties: ["phone", "role", "isActivated", "address"],
         /*listProperties: ["phone", "role", "isActivated"],
         filterProperties: ["phone", "role"],*/

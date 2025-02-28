@@ -63,13 +63,13 @@ export const confirmOrder = async (req, reply) => {
       branch,
       totalPrice,
       deliveryLocation: {
-        latitude: customerData.liveLocation.latitude,
-        longitude: customerData.liveLocation.longitude,
+        latitude: customerData.liveLocation.latitude||13.666,
+        longitude: customerData.liveLocation.longitude||75.333,
         address: "No address available",
       },
       pickupLocation: {
-        latitude: brachData.location.latitude,
-        longitude: brachData.location.longitude,
+        latitude: brachData.location.latitude||13.666,
+        longitude: brachData.location.longitude||75.333,
         address: brachData.address || "No address available",
       },
     });
